@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href = "calc.css">
+</head>
+<body>
+    <div class="container">
+        <div class="smallContainer">
+        <div id="display"></div>
+        <button class="backspace" onclick="clearInput()">C</button>
+        <button id="num1" class="num" onclick="appendNumber(1)">1</button>
+        <button id="num2" class="num" onclick="appendNumber(2)">2</button>
+        <button id="num3" class="num" onclick="appendNumber(3)">3</button>
+        <button id="num4" class="num" onclick="appendNumber(4)">4</button>
+        <button id="num5" class="num" onclick="appendNumber(5)">5</button>
+        <button id="num6" class="num" onclick="appendNumber(6)">6</button>
+        <button id="num7" class="num" onclick="appendNumber(7)">7</button>
+        <button id="num8" class="num" onclick="appendNumber(8)">8</button>
+        <button id="num9" class="num" onclick="appendNumber(9)">9</button>
+        <button id="num0" class="num" onclick="appendNumber(0)">0</button>
+        <button id="add" class = "operations" onclick ="appendOperation('+')">+</button>
+        <button id="minus" class="operations" onclick ="appendOperation('-')">-</button>
+        <button id="mult" class="operations" onclick ="appendOperation('*')">*</button>
+        <button id="div" class="operations" onclick ="appendOperation('/')">/</button>
+        <button id="decimal" class="operations" onclick ="appendOperation('.')">.</button>
+        <button id="result" class="operations" onclick ="calculate()">=</button>
+        </div>
+    </div>
+    
+    <script src="calc.js"></script>
+    </body>
+    </html>
+        
